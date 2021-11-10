@@ -1,0 +1,601 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://fobnail.3mdeb.com/flashing_samples/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Flashing sample applications - Fobnail Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#flashing-sample-applications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Fobnail Documentation" class="md-header__button md-logo" aria-label="Fobnail Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fobnail Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Flashing sample applications
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Fobnail Documentation" class="md-nav__button md-logo" aria-label="Fobnail Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Fobnail Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../description/" class="md-nav__link">
+        Project description
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Fobnail architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Flashing sample applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Flashing sample applications
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparing-environment" class="md-nav__link">
+    Preparing environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nrf52840-buttons-and-leds" class="md-nav__link">
+    nRF52840 buttons and LEDs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-and-flashing-mcuboot" class="md-nav__link">
+    Building and flashing mcuboot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-and-flashing-zephyr-blinyk-sample" class="md-nav__link">
+    Building and flashing Zephyr blinyk sample
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment/" class="md-nav__link">
+        Environment setup
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparing-environment" class="md-nav__link">
+    Preparing environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nrf52840-buttons-and-leds" class="md-nav__link">
+    nRF52840 buttons and LEDs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-and-flashing-mcuboot" class="md-nav__link">
+    Building and flashing mcuboot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-and-flashing-zephyr-blinyk-sample" class="md-nav__link">
+    Building and flashing Zephyr blinyk sample
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="flashing-sample-applications">Flashing sample applications</h1>
+<h2 id="preparing-environment">Preparing environment</h2>
+<p>Prepare the development environment first as described in
+<a href="../environment/">Environment setup document</a>.</p>
+<h2 id="nrf52840-buttons-and-leds">nRF52840 buttons and LEDs</h2>
+<p><img alt="" src="../images/nRF52840_dongle_buttons_leds.svg" /></p>
+<h2 id="building-and-flashing-mcuboot">Building and flashing mcuboot</h2>
+<p><a href="https://github.com/mcu-tools/mcuboot">MCUboot</a> is a secure bootloader for
+32-bit microcontrollers. It also provides options for device firmware upgrade,
+e.g. via USB which makes it an ideal target (along with secure boot features)
+for fobnail.</p>
+<p>If you prepared the environment properly, you should have cloned the
+<a href="https://github.com/fobnail/fobnail">fobnail main repository</a>
+which contains zephyr and mcuboot. To compile mcuboot follow the steps below:</p>
+<ol>
+<li>Plug the nRF52840 dongle into the USB port of your computer while holding
+   the reset switch (as shown on the picture above). The red diode (LED2)
+   should start blinking (in fading manner). This means the dongle is in
+   bootloader mode. Yuo may watch the dmesg to see if the USB device appears
+   with <code>sudo dmesg -wH</code>:
+   <div class="highlight"><pre><span></span><code>usb 1-1.4: new full-speed USB device number 62 using ehci-pci
+usb 1-1.4: New USB device found, idVendor=1915, idProduct=521f, bcdDevice= 1.00
+usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-1.4: Product: Open DFU Bootloader
+usb 1-1.4: Manufacturer: Nordic Semiconductor
+usb 1-1.4: SerialNumber: EB443991D70D
+</code></pre></div></li>
+<li><code>git clone https://github.com/fobnail/fobnail.git</code> if you haven't done it
+   yet.</li>
+<li>Go to fobnail main repository directory: <code>cd /path/to/fobnail</code> and initialize
+   submodules:
+   <div class="highlight"><pre><span></span><code>git submodule update --init --checkout
+</code></pre></div></li>
+<li>Run the fobnail-sdk container with <code>./run-container.sh</code>. Wait or a while
+   while the container initializes the necessary Zephyr modules. When finished
+   (the prompt appears), proceed with next step.</li>
+<li>Execute <code>make mcuboot_demo dfu</code>. This command will build the mcuboot for
+   nRF52840 dongle and flash it using USB DFU (device firmware upgrade). At the
+   end of the process you should see:
+   <div class="highlight"><pre><span></span><code>Zip created at build/mcuboot.zip
+  [####################################]  100%          
+Device programmed.
+</code></pre></div></li>
+<li>Now unplug the nRF52840 dongle. In order to prove the process was
+   successful, plug the dongle again into the USB port of your computer but
+   this time, hold the SW1 switch while plugging. The SW1 switch is the white
+   button near the reset button. This will put the dongle into mcuboot
+   bootloader mode. Do not press the reset button as it will put the dongle
+   into Nordic bootloader mode (we do not want this). Note this is different
+   than previous situation, because this time we are using mcuboot instead of
+   stock Nordic's bootlaoder. Unlike Nordic's bootloader, mcuboot does not
+   blink a LED while in bootloader mode so we have to watch dmesg for new USb
+   device <code>sudo dmesg -wH</code>:
+   <div class="highlight"><pre><span></span><code>usb 1-1.4: New USB device found, idVendor=2fe3, idProduct=0100, bcdDevice= 2.06
+usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-1.4: Product: MCUBOOT
+usb 1-1.4: Manufacturer: ZEPHYR
+usb 1-1.4: SerialNumber: 05AA335B46AC1D80
+cdc_acm 1-1.4:1.0: ttyACM0: USB ACM device
+</code></pre></div>
+   Notice the different in the Product name: <code>Open DFU Bootloader</code> vs
+   <code>MCUBOOT</code>. This means we have booted the mcuboot in bootloader mode.</li>
+</ol>
+<h2 id="building-and-flashing-zephyr-blinyk-sample">Building and flashing Zephyr blinyk sample</h2>
+<p><a href="https://github.com/zephyrproject-rtos/zephyr">Zephyr</a> is a very popular RTOS
+which supports a wide variety of microcontrollers including nRF52840 dongle. We
+will leverage it to show how to launch a sample application on nRF52840 dongle
+using mcuboot. If you don't have the environment ready go to <a href="#preparing-environment">Preparing environment</a>.</p>
+<p>In order to flash a sample application on the nRF52840 dongle we will use
+blinky sample application from Zephyr repository. Follow the steps below to
+build and flash blinky sample:</p>
+<ol>
+<li>Put the dongle into mcuboot bootloader mode as instructed in step 6 of
+   <a href="#building-and-flashing-mcuboot">Building and flashing mcuboot</a></li>
+<li>Go to fobnail main repository directory: <code>cd /path/to/fobnail</code></li>
+<li>Run the fobnail-sdk container with <code>./run-container.sh</code>. This time the
+   container will not initialize the environment if you have done it
+   previously. You will see an error like this (which you may ignore):
+   <div class="highlight"><pre><span></span><code>FATAL ERROR: already initialized in /home/build, aborting.
+Note:
+    In your environment, ZEPHYR_BASE is set to:
+    /home/build/zephyr
+
+    This forces west to search for a workspace there.
+    Try unsetting ZEPHYR_BASE and re-running this command.
+</code></pre></div></li>
+<li>Execute <code>make blinky_demo dfu</code>. This command will build the mcuboot for
+   nRF52840 dongle and flash it using USB DFU (device firmware upgrade). At the
+   end of the process you should see:
+   <div class="highlight"><pre><span></span><code>=== image configuration:
+partition offset: 65536 (0x10000)
+partition size: 385024 (0x5e000)
+rom start offset: 512 (0x200)
+=== signing binaries
+unsigned bin: /home/build/build/blinky/zephyr/zephyr.bin
+signed bin:   build/blinky.signed.bin
+ 13.55 KiB / 13.55 KiB    [============================================================================================================================================================] 100.00%    3.09 KiB/s 4s
+Done
+Done
+</code></pre></div>
+   Notice this time the output from DFU looks different as we are using mcuboot
+   DFU application instead of Nordic's.</li>
+<li>To verify the process was successful, unplug the dongle and plug it again to
+   the USB port of your CPU. This time do not press any buttons. YOo should
+   notice a green LED blinking (LED1). This means the Zephyr blinky sample has
+   been flashed with USB DFU and launched successfully.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>MCUboot is a great bootloader with secure boot and USB DFU capabilities for
+secure applications and great firmware update experience.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../architecture/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fobnail architecture" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Fobnail architecture
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../environment/" class="md-footer__link md-footer__link--next" aria-label="Next: Environment setup" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Environment setup
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
